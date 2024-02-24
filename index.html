@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerador de Senha</title>
+    <link rel="shortcut icon" type="image/png" href="favicon_io/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-titulo">
+        <!-- <h1>Gerador de Senha</h1> -->
+    </div>
+    <div class="generator">
+        <h1 class="container-titulo">Gerador de Senha</h1>
+        <div class="password">
+            <input type="text" value="...">
+            <button id="copiar-icon"><a href="#"><img src="icons8-copy-32.png" id="copiar-icon" width="20" style="display: flex; align-self:self-start;"></a></button>
+        </div>
+        <div class="range">
+            <input type="range" min="4" max="24" value="8" id="rangeInput">
+            <input type="number" min="4" max="24" value="8" id="numberInput">
+        </div>
+        <div class="options">
+            <div class="option">
+                <label for="">
+                    <input type="checkbox" id="lowercaseCheckBox" checked>
+                    <span>a-z</span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="">
+                    <input type="checkbox" id="uppercaseCheckBox">
+                    <span>A-Z</span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="">
+                    <input type="checkbox" id="numbersCheckBox">
+                    <span>0-9</span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="">
+                    <input type="checkbox" id="specialsCheckBox">
+                    <span>!@$#%^</span>
+                </label>
+            </div>
+        </div>
+        <button class="generate">Gerar Senha</button>
+    </div>
+    <script src="generator.js">
+
+    </script>
+</body>
+</html>
